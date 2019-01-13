@@ -1,13 +1,13 @@
 {
-  "name": "brittanychiang.com",
+  "name": "https://christianyap.github.io/ChristianYap/",
   "version": "0.0.0",
-  "description": "Design-minded front-end software engineer focused on building beautiful interfaces and experiences",
+  "description": "Computer and Environmental engineer focused on tackling the world's environmental issues",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build"
   },
-  "author": "Brittany Chiang",
+  "author": "Christian Yap",
   "license": "ISC",
   "devDependencies": {
     "@nuscout/eslint-config": "^0.2.1",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/bchiang7.github.io"
+    "url": "https://christianyap.github.io/ChristianYap/"
   },
-  "homepage": "https://github.com/bchiang7/bchiang7.github.io"
+  "homepage": "https://christianyap.github.io/ChristianYap/"
 }
