@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://christianyap.github.io/ChristianYap/sitemap.xml
