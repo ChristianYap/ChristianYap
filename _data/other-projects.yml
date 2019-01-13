@@ -1,7 +1,7 @@
 - name: Automated Home-Infusion Pump
   url: https://www.youtube.com/watch?v=HYMUzGdiqE0
   code: https://www.youtube.com/watch?v=HYMUzGdiqE0
-  description: Small React project created during an interview process to browse and search surf videos via the YouTube API.
+  description: A project in partnership with GVSU and Spectrum Health where we created a home infusion device that simplified the drug infusion process, allowing hospital patients, especially elderly patients, to decrease the time spent in the hospital.
   used:
     - thing: Mechanical CAD Design
     - thing: Electrical Circuit Design
