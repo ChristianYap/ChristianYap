@@ -1,5 +1,6 @@
 - name: Automated Infusion System
-  url: https://www.youtube.com/watch?v=HYMUzGdiqE0
+  url: https://github.com/bchiang7/Surf-Videos
+  code: https://github.com/bchiang7/Surf-Videos
   description: Project created in partnership with GVSU and Spectrum health to raise awareness for elderly neglect and simply the infusion/medication process at home.
     - thing: PLC and Microcontroller work
     - thing: C++ work
