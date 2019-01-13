@@ -1,0 +1,26 @@
+languages:
+  - item: JavaScript (ES6)
+  - item: TypeScript
+  - item: HTML
+  - item: CSS/Sass
+  - item: Python
+  - item: SQL
+  - item: C/C++
+  - item: Java
+
+frameworks:
+  - item: React
+  - item: Jekyll
+  - item: Node
+  - item: Wordpress
+  
+tools:
+  - item: Bash
+  - item: Git & Github
+  - item: Chrome DevTools
+
+design:
+  - item: Solidworks
+  - item: Adobe Photoshop, After Effects, Lightroom CC
+  - item: InDesign
+  - item: User Testing
