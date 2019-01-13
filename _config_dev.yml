@@ -1,27 +1,25 @@
 # Site settings
-name: Brittany Chiang
-title: Brittany Chiang | Front End Software Engineer
-description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
-url: https://brittanychiang.com/
-baseurl: ""
-email: brittany.chiang@gmail.com
-cover: https://brittanychiang.com/img/og.png
-logo: https://brittanychiang.com/img/emojis/technologist.png
+name: Christian Yap
+title: Christian Yap | Computer, Environmental Engineer
+description: Computer and Environmental engineer focused on tackling the world's environmental issues
+url: https://christianyap.github.io/ChristianYap/
+baseurl: "https://christianyap.github.io/ChristianYap/"
+email: https://christianyap.github.io/ChristianYap/
+cover: https://christianyap.github.io/ChristianYap/img/og.png
+logo: https://christianyap.github.io/ChristianYap/img/emojis/technologist.png
 resume: https://christianyap.github.io/ChristianYap/resume.pdf
       
 social:
   - title: email
-    url: mailto:brittany.chiang@gmail.com
+    url: mailto:yapc@mail.gvsu.edu
   - title: twitter
-    url: https://twitter.com/bchiang7
+    url: https://twitter.com/thephatyap
   - title: instagram
-    url: https://instagram.com/bchiang7
-  - title: codepen
-    url: http://codepen.io/bchiang7
+    url: https://instagram.com/thephatyap
   - title: github
-    url: https://github.com/bchiang7
+    url: https://github.com/staddlez
   - title: linkedin
-    url: https://www.linkedin.com/in/bchiang7
+    url: https://www.linkedin.com/in/christian-yap-3b0a57ba/
 
 # Build settings
 markdown: kramdown
