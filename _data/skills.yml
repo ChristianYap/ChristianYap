@@ -1,27 +1,22 @@
 languages:
-  - item: JavaScript (ES6)
-  - item: TypeScript
   - item: HTML
-  - item: CSS/Sass
+  - item: CSS
   - item: Python
-  - item: SQL
-  - item: C/C++
+  - item: MSSQL
+  - item: C/C++/C#
   - item: Java
 
 frameworks:
-  - item: React
-  - item: Jekyll
-  - item: Node
+  - item: Bootstrap
   - item: Wordpress
   
 tools:
-  - item: Bash
   - item: Git & Github
-  - item: Chrome DevTools
 
 design:
   - item: Solidworks
   - item: Adobe Photoshop, After Effects, Lightroom CC
-  - item: InDesign
+  - item: Electrical Circuit Design (PCB)
+  - item: Microcontroller / Embedded software projects
   - item: User Testing
  
