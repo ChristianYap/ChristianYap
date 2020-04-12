@@ -170,6 +170,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.progressBar.setVisible(False)
         self.actionSave_Results.setVisible(False)
 
+        # Read only:
+        self.simulationReviewer.setReadOnly(True)
+        self.simulationParameterPrint.setReadOnly(True)
+        self.resultScreenOne.setReadOnly(True)
+        # Font Size
+        self.simulationParameterPrint.setFontPointSize(10)
+        self.simulationReviewer.setFontPointSize(10)
+
+        # Preset variables
+        global defaultStyle
+        defaultStyle = self.styleSheet()
         global stopSimulation
         stopSimulation = False
 
@@ -243,9 +254,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # Menu
         self.actionExit.triggered.connect(self.ActionExit)
         self.actionUser_Manual.triggered.connect(self.UserManual)
+        self.actionNight_Mode.triggered.connect(self.NightMode)
 
         # Stop Simulation
         self.stopSimulationButton.clicked.connect(self.StopSimulation)
+
+    #################################################################################
+    # Stop Simulation
+    #################################################################################
+    def NightMode(self):
+
+        if self.actionNight_Mode.isChecked():
+            app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+            app.setStyleSheet(qdarkstyle.load_stylesheet(qt_api='pyqt5'))
+        else:
+            global defaultStyle
+            app.setStyleSheet(defaultStyle)
 
     #################################################################################
     # Stop Simulation
@@ -701,15 +725,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
                 print(str(newPath) + " master file generated.")
         else:
-            # View Trial Results:
+            # Save in one file, View Trial Results:
+            self.tableRawFishData.setRowCount(0)
             testResults = simulationSaves[int(self.loadSimulationNumberInput.currentText()) - 1].GetTestData()
             newPath = path[0]
             for i in range(0, self.tableRawTestData.rowCount()):
+                print(i)
                 # Get fish data for that specific test:
                 fishData = testResults[i].GetFishData()
                 # increment filename as needed
                 # Show fish data:
                 for itr in range(0, len(fishData)):
+                    print(itr)
                     numRows = self.tableRawFishData.rowCount()
                     self.tableRawFishData.insertRow(numRows)
                     self.tableRawFishData.setItem(numRows, 0, QTableWidgetItem(str('{number:.{digits}f}'.format(number=fishData[itr].GetCaptureProbability(), digits=2))))
@@ -747,7 +774,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             print(str(newPath) + " generated.")
 
-            # Get all test data
+            # Get all test data for MASTER
             newPath = self.CheckFile(path[0], "master")
             # Now we write the raw data
             if newPath != '':
@@ -2095,7 +2122,4 @@ if __name__ == "__main__":
     app = QApplication([])
     ui = MainWindow()
     # Set custom stylesheet:
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
-    app.setStyleSheet(qdarkstyle.load_stylesheet(qt_api='pyqt5'))
-
     sys.exit(app.exec_())
